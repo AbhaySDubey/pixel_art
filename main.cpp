@@ -40,10 +40,10 @@ class Grid {
         // the primary grid holds the complete information of each cell
         std::vector<std::vector<cell*>> grid;   // grid that contains the primary(atomic) cells (2.5 x 2.5)
         
-        // the secondary grids is an overlay for the 10 x 10 and 40 x 40 cells, they would correspondingly 
+        // the secondary grids is an overlay for the 20 x 20 and 40 x 40 cells, they would correspondingly 
         // hold the cell IDs of the cells that they accumulate
-        std::vector<std::vector<std::pair<int, int>>> sec_grid1;    // grid for 10 x 10 cells
-        std::vector<std::vector<std::pair<int, int>>> sec_grid2;    // grid for 20 x 20 cells
+        std::vector<std::vector<std::pair<int, int>>> sec_grid1;    // grid for 20 x 20 cells
+        std::vector<std::vector<std::pair<int, int>>> sec_grid2;    // grid for 40 x 40 cells
         Color default_color = BLACK;
         
 
