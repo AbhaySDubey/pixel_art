@@ -12,7 +12,6 @@
 #define grid_width 600
 #define grid_height 600
 
-// #define cell_side 30
 #define cell_margin 0.5
 #define font_size 10
 
@@ -28,9 +27,7 @@ struct cell {
 
 class Grid {
     private:
-        // need to define a function that allows a user to change the value of cell side
-
-        // dimension of the 5 x 5 cells
+        // dimension of the 10 x 10 cells
         float atomic_cell_side = 10;
         int num_atomicCells_1d = (grid_width / atomic_cell_side);
          // dimension of the 20 x 20 cells
@@ -212,6 +209,7 @@ class Screen {
         int max_input_chars = 6;
         int font_size_hex = 15;
         std::string hex_val;
+
         // choice for cell dimensions
         int cell_side_choice = 1;
 
